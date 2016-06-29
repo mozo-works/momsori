@@ -1,0 +1,13 @@
+---
+
+- title: 소개
+  url: /about
+
+- title: 작품
+  url: /works
+
+- title: 교육
+  url: /courses
+
+- title: 갤러리
+  url: /gallery
