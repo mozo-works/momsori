@@ -1,10 +1,10 @@
 ---
 
 - title: 소개
-  url: /about
+  url: {{ site.github.url }}/about
 
 - title: 작품
-  url: /works
+  url: {{ site.github.url }}/works
 
 - title: 교육 과정
-  url: /courses
+  url: {{ site.github.url }}/courses
