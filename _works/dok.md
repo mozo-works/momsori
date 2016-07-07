@@ -11,6 +11,7 @@ r_time: 60
 objet: 보이스, 의상
 img: dok
 video: gf1xqfowZ_o
+dir: dok
 ---
 
 쉿! 배꼽이 말하기 시작했어!
