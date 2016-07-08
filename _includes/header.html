@@ -1,6 +1,7 @@
-<nav class="navbar navbar-light bg-faded">
+<nav class="navbar navbar-dark bg-inverse" style="border-radius:0">
   <div class="container">
-    <a class="navbar-brand" href="{{ site.github.url }}/">{{ site.name }}</a>
+    <a class="navbar-brand" href="{{ site.github.url }}/">
+    <img src="{{ site.github.url }}/images/logo.gif" alt="{{ site.name }}"></a>
     <ul class="nav navbar-nav pull-xs-right">
       {% for item in site.data.menu %}
         {% if item.url contains page.collection or page.url contains item.url %}
@@ -11,6 +12,13 @@
       <li class="nav-item{% if current_menu %} active{% endif %}">
         <a class="nav-link" href="{{ item.url | prepend: site.github.url }}">
           {{ item.title }}{% if current_menu %} <span class="sr-only">(current)</span>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+      {% for item in site.data.test %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ item.url | prepend: site.github.url }}">
+          {{ item.title }}
         </a>
       </li>
       {% endfor %}

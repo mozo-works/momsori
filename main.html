@@ -2,22 +2,16 @@
 layout: default
 ---
 
-<div class="jumbotron mainpage">
-  <div class="container">
-    <h1 class="display-4" style="color:#ffffff">현재 공연 배너</h1>
-    <p class="lead" style="color:#ffffff">시간 장소 소개</p>
-    <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">자세히 보기</a></p>
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1 style="color:#cccccc">몸MOM소리</h1>
+            <h3 style="color:#ffffff">보이스씨어터 컴패니 &amp; 보이스테라피</h3>
+            <br>
+            <a href="/about" class="btn btn-dark btn-lg">더 알아보기</a>
+        </div> 
 
-<!--     <nav class="nav nav-inline">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link" href="#">Another link</a>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</nav> -->
-  </div> 
-
-
-</div> 
+    </header>
 
 
 <div class="main-section  section-theater">
@@ -40,7 +34,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1>김진영<small>
+        <h1>김진영<small class="text-muted">
         ‘보이스씨어터 몸MOM소리’ 대표<!-- / 연출가, 공연자, 세라피스트 / 성심여대 불문과 및 동대--></small></h1>
 
         <p>김진영은 서울대학교 불문과 대학원에서 박사과정을 수료하고, 2003년 이스라엘 예루살렘의 'The School of Visual Theater'를 졸업했다. 2000년부터 판소리, 중동의 전통타악기 타르부카, 유대종교 음악의 보이스 창법, 인도네시아 전통 인형극, 액션 포엠, 세라믹, 종이 오브제극, 인형극, 재즈댄스 등 동서양의 각종 공연양식을 한국, 독일, 이스라엘 등지에서 배웠다. 여성의 세계를 자기만의 개성으로 창조하는 셀프 퍼포머(Self-Performer)로서 여성으로서의 삶을 시각적 재료와 ‘보이스’ 재료를 이용, 우주화시키는 작업을 해왔다. 현재 ‘보이스씨어터 몸MOM소리’를 운영하며 공연과 교육, 세라피 프로그램을 꾸준히 진행해 오고 있으며 현재 팜씨어터에서 전문예술인을 대상으로 소리 지도 및 교육도 하고 있다.</p>
@@ -64,7 +58,7 @@ layout: default
       <div class="col-lg-12">
         <h2>주요작품</h2>
       </div>
-    {% assign works = site.works | sort:"wid" | reverse  %}
+    {% assign works = site.works | sort:"id" | reverse  %}
     {% for work in works %}
     <div class="col-md-4">
       <div class="card">
@@ -72,7 +66,6 @@ layout: default
         <div class="card-block">
           <h4 class="card-title"><a href="{{ work.url }}">{{ work.title }}</a></h4>
           <p class="card-text">{{ work.description }}</p>
-         <!-- <a href="{{ work.url }}" class="btn btn-primary">작품정보</a>-->
         </div>
       </div>
     </div>
@@ -82,10 +75,23 @@ layout: default
 </div>
 
 <div class="main-section section-education">
-{% include course_grid.html %}
+  <div class="container">
+  <div class="row"> 
+    <div class="col-lg-12">
+    <h2>교육과정</h2>
+    </div>
+    {% assign courses = site.courses | sort:"id" | reverse  %}
+    {% for course in courses %}
+    <div class="col-md-6">
+      <div class="card">
+        <a href="{{ course.url }}"><img class="card-img-top img-fluid" src="http://placehold.it/400x225" alt="Card image cap"></a>
+        <div class="card-block">
+          <h4 class="card-title"><a href="{{ course.url }}">{{ course.title }}</a></h4>
+          <p class="card-text">{{ course.description }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  </div>
 </div>
-
-{% include todo.html text="로고 교체" %}
-{% include todo.html text="color set 변경" %}
-
-

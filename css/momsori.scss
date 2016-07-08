@@ -5,15 +5,12 @@
 
 $section-background-primary: #eeeeee;
 $section-background-secondary: #ffffff;
+$nav-background: #1c110f;
 
 html,
 body {
     height: 100%;
     font-family: 'Noto Sans KR', sans-serif;
-}
-
-hr {
-	padding: 30px, 0;
 }
 
 jumbotron {
@@ -32,8 +29,12 @@ jumbotron {
 
 footer {
 	line-height: 60px;
-	background: #cccccc;
+	background: $nav-background;
 	padding: 20px, 0;
+}
+
+.bg-inverse {
+	background: $nav-background;
 }
 
 .main-section {

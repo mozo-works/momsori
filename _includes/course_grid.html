@@ -1,0 +1,34 @@
+  <div class="container">
+  <div class="row"> 
+    <div class="col-lg-12">
+    <h2>교육과정</h2>
+    </div>
+    {% assign courses = site.courses | sort:"wid" | reverse  %}
+    {% for course in courses %}
+    {% assign course_url =  course.url | prepend: site.github.url  %}
+    <div class="col-md-6">
+      <div class="card">
+        <a href="{{ course.url | prepend: site.github.url }}"><img width="100%" class="card-img img-fluid" src="{{ site.github.url }}/images/{{ course.dir }}/thumb.jpg" alt="Card image cap"></a>
+        <div class="card-img-overlay">
+          <h4 class="card-title"><a href="{{ course.url | prepend: site.github.url }}">{{ course.title }}</a></h4>
+          <p class="card-text">{{ course.description }}</p>
+          <a href="{{ course_url }}" class="btn btn-primary">더 알아보기</a>
+        </div>
+      </div>
+
+ <!--    <div class="card card-inverse">
+      <img class="card-img" data-src="..." alt="Card image">
+      <div class="card-img-overlay">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div> -->
+
+
+
+
+    </div>
+    {% endfor %}
+  </div>
+  </div>
