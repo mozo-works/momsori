@@ -2,6 +2,7 @@
 layout: work
 id: 2
 title: 나의 배꼽 이야기
+subtitle: 쉿! 배꼽이 말하기 시작했어!
 e_title: Story of my belly button
 c_year: 2003
 type: 보이스, 의상 오브제극
@@ -11,6 +12,9 @@ r_time: 30
 objet: 보이스, 의상
 img: bellybutton
 video: v6FWZ1pgXa4
+banner: /images/bellybutton/banner.jpg
+images: 8
+
 ---
 
 

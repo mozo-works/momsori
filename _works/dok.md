@@ -2,6 +2,7 @@
 layout: work
 id: 3
 title: 보이스 퍼포먼스 '독'
+subtitle: 쉿! 배꼽이 말하기 시작했어!
 e_title: Voice performance 'Dok'
 c_year: 2008
 type: 보이스 퍼포먼스
@@ -12,6 +13,9 @@ objet: 보이스, 의상
 img: dok
 video: gf1xqfowZ_o
 dir: dok
+banner: /images/dok/banner.jpg
+images: 4
+
 ---
 
 쉿! 배꼽이 말하기 시작했어!
