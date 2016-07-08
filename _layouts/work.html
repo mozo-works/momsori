@@ -22,7 +22,7 @@ layout: default
       With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a> -->
 <p class="card-text">
-형식: {{ page.objects }}<br/>
+형식: {{ page.type }}<br/>
 창작년도: {{ page.c_year }}년<br/>
 창작자: {{ page.creator }}<br/>
 공연자: {{ page.performer }}<br/>
@@ -40,53 +40,72 @@ layout: default
 
 <div class="container">
 
-  {{ content }}
-
 	<div class="row">
-		<div class="col-lg-12">
-			<h2 class="section-title page-header">관련 사진</h2>
-		</div>
-		{% for i in (1..page.images) %}
-		<!-- <div class="col-sm-3 col-xs-6"> -->
-			<img src="{{ site.github.url }}/images/{{ page.img }}/img00{{ i }}.jpg" class="img-responsive img-fluid img-thumbnail"/> <br/>
-		<!-- </div> -->
-		{% endfor %}
-	</div>
 
-	<hr/>
+		<div class="col-md-8">
 
+			{{ content }}
 
-	<div class="row">
-		<div class="col-lg-12">
-			<h2 class="section-title page-header">관련 동영상</h2>
-		</div>
-		<div class="col-md-4 video">
-			<div class="embed-responsive embed-responsive-4by3">
-			<iframe width="420" height="315" src="https://www.youtube.com/embed/{{ page.video }}" frameborder="0" allowfullscreen></iframe>
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="section-title page-header">관련 사진</h2>
+				</div>
+			{% for i in (1..page.images) %}
+			<!-- <div class="col-sm-3 col-xs-6"> -->
+				<img src="{{ site.github.url }}/images/{{ page.img }}/img00{{ i }}.jpg" style="border-radius:0; width:70%; margin:10px;" class="img-responsive img-fluid img-thumbnail"/> <br/>
+			<!-- </div> -->
+			{% endfor %}
 			</div>
+
 		</div>
+
+		<div class="col-md-4">
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="section-title page-header">관련 동영상</h2>
+				</div>
+				<div class="col-lg-12 video">
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe width="420" height="315" src="https://www.youtube.com/embed/{{ page.video }}" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<hr/>
+			
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="section-title page-header">다른 작품들</h2>
+				</div>
+				{% assign works = site.works | sort:"id" | reverse  %}
+				{% for work in works %}
+				{% if work.id != page.id %}
+				<div class="col-lg-12">
+					<div class="card">
+						<a href="{{ work.url }}"><img class="card-img-top img-fluid" src="{{ site.github.url }}/images/{{ work.img }}/thumb.jpg" alt="Card image cap"></a>
+						<div class="card-block">
+					  <h4 class="card-title"><a href="{{ work.url }}">{{ work.title }}</a></h4>
+					  <p class="card-text">{{ work.description }}</p>
+						</div>
+					</div>
+				</div>
+				{% endif %}
+				{% endfor %}  
+			</div>
+
+
+		</div>
+
 	</div>
 
 
-	<div class="row">
-		<div class="col-lg-12">
-			<h2 class="section-title page-header">다른 작품들</h2>
-		</div>
-	    {% assign works = site.works | sort:"id" | reverse  %}
-	    {% for work in works %}
-	    {% if work.id != page.id %}
-	    <div class="col-md-4">
-	      <div class="card">
-	        <a href="{{ work.url }}"><img class="card-img-top img-fluid" src="{{ site.github.url }}/images/{{ work.img }}/thumb.jpg" alt="Card image cap"></a>
-	        <div class="card-block">
-	          <h4 class="card-title"><a href="{{ work.url }}">{{ work.title }}</a></h4>
-	          <p class="card-text">{{ work.description }}</p>
-	        </div>
-	      </div>
-	    </div>
-	    {% endif %}
-	    {% endfor %}  
-	</div>
+
+
+
+
+
+
 
 
 </div>
