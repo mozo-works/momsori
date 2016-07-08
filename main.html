@@ -3,7 +3,7 @@ layout: default
 ---
 
     <!-- Header -->
-    <header id="top" class="header">
+    <header id="top" class="header" style="background: url({{ site.github.url }}/images/bigtitle2.jpg) no-repeat center center scroll">
         <div class="text-vertical-center">
             <h1 style="color:#cccccc">몸MOM소리</h1>
             <h3 style="color:#ffffff">보이스씨어터 컴패니 &amp; 보이스테라피</h3>
@@ -43,7 +43,7 @@ layout: default
       <div class="col-md-4">
 
       <figure class="figure">
-        <img src="/images/kimjinyoung.jpg" class="figure-img img-fluid" alt="보이스씨어터 몸MOM소리 김진영 대표">
+        <img src="{{ site.github.url }}/images/kimjinyoung.jpg" class="figure-img img-fluid" alt="보이스씨어터 몸MOM소리 김진영 대표">
         <figcaption class="figure-caption text-xs-right">김진영 대표</figcaption>
       </figure>
 </div>      
@@ -62,9 +62,9 @@ layout: default
     {% for work in works %}
     <div class="col-md-4">
       <div class="card">
-        <a href="{{ work.url }}"><img class="card-img-top img-fluid" src="/images/{{ work.img }}/thumb.jpg" alt="Card image cap"></a>
+        <a href="{{ site.github.url }}/{{ work.url }}"><img class="card-img-top img-fluid" src="{{ site.github.url }}/images/{{ work.img }}/thumb.jpg" alt="Card image cap"></a>
         <div class="card-block">
-          <h4 class="card-title"><a href="{{ work.url }}">{{ work.title }}</a></h4>
+          <h4 class="card-title"><a href="{{ site.github.url }}/{{ work.url }}">{{ work.title }}</a></h4>
           <p class="card-text">{{ work.description }}</p>
         </div>
       </div>
@@ -74,24 +74,4 @@ layout: default
   </div>
 </div>
 
-<div class="main-section section-education">
-  <div class="container">
-  <div class="row"> 
-    <div class="col-lg-12">
-    <h2>교육과정</h2>
-    </div>
-    {% assign courses = site.courses | sort:"id" | reverse  %}
-    {% for course in courses %}
-    <div class="col-md-6">
-      <div class="card">
-        <a href="{{ course.url }}"><img class="card-img-top img-fluid" src="http://placehold.it/400x225" alt="Card image cap"></a>
-        <div class="card-block">
-          <h4 class="card-title"><a href="{{ course.url }}">{{ course.title }}</a></h4>
-          <p class="card-text">{{ course.description }}</p>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  </div>
-</div>
+
