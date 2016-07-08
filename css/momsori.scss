@@ -21,7 +21,7 @@ jumbotron {
 }
 
 .mainpage {
-	background: url(/images/title.jpg) no-repeat center center ;
+	background: url({{ site.github.url }}/images/title.jpg) no-repeat center center ;
 	background-size: cover;
 	padding: 100px, 0;
 }

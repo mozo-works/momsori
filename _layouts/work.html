@@ -48,7 +48,7 @@ layout: default
 		</div>
 		{% for i in (1..page.images) %}
 		<div class="col-sm-3 col-xs-6">
-			<img src="/images/{{ page.img }}/img00{{ i }}.jpg" class="img-responsive img-fluid img-thumbnail"/>
+			<img src="{{ site.github.url }}/images/{{ page.img }}/img00{{ i }}.jpg" class="img-responsive img-fluid img-thumbnail"/>
 		</div>
 		{% endfor %}
 	</div>
@@ -76,7 +76,7 @@ layout: default
 	    {% for work in works %}
 	    <div class="col-md-4">
 	      <div class="card">
-	        <a href="{{ work.url }}"><img class="card-img-top img-fluid" src="/images/{{ work.img }}/thumb.jpg" alt="Card image cap"></a>
+	        <a href="{{ work.url }}"><img class="card-img-top img-fluid" src="{{ site.github.url }}/images/{{ work.img }}/thumb.jpg" alt="Card image cap"></a>
 	        <div class="card-block">
 	          <h4 class="card-title"><a href="{{ work.url }}">{{ work.title }}</a></h4>
 	          <p class="card-text">{{ work.description }}</p>
