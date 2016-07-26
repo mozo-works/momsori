@@ -1,27 +1,45 @@
-<nav class="navbar navbar-dark bg-inverse" style="border-radius:0">
+<nav class="navbar navbar-default navbar-fixed-top" style="border-radius:0">
   <div class="container">
-    <a class="navbar-brand" href="{{ site.github.url }}/">
-    <img src="{{ site.github.url }}/images/logo.gif" alt="{{ site.name }}"></a>
-    <ul class="nav navbar-nav pull-xs-right">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+
+    
+      <a class="navbar-brand" style=" height:90px; max-height:100%" href="{{ site.github.url }}/">
+        <img class="" style="padding:0 0 0 0;margin:0 0 0 0; height:100%;" src="{{ site.github.url }}/images/logo_w.jpg" alt="{{ site.name }}">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
       {% for item in site.data.menu %}
         {% if item.url contains page.collection or page.url contains item.url %}
           {% assign current_menu = true %}
         {% else %}
           {% assign current_menu = false %}
         {% endif %}
-      <li class="nav-item{% if current_menu %} active{% endif %}">
-        <a class="nav-link" href="{{ item.url | prepend: site.github.url }}">
-          {{ item.title }}{% if current_menu %} <span class="sr-only">(current)</span>{% endif %}
-        </a>
-      </li>
+        <li class="nav-item {% if current_menu %}active{% endif %}">
+          <a class="nav-link" href="{{ item.url | prepend: site.github.url }}">{{ item.title }}{% if current_menu %} <span class="sr-only">(current)</span>{% endif %}
+          </a>
+        </li>
       {% endfor %}
+
       {% for item in site.data.test %}
-      <li class="nav-item">
-        <a class="nav-link" href="{{ item.url | prepend: site.github.url }}">
-          {{ item.title }}
-        </a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ item.url | prepend: site.github.url }}">{{ item.title }}
+          </a>
+        </li>
       {% endfor %}
-    </ul>
+      </ul>
+
+    </div>
+
   </div>
 </nav>

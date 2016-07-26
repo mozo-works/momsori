@@ -3,6 +3,9 @@
 
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
+
+
+
 $section-background-primary: #eeeeee;
 $section-background-secondary: #ffffff;
 $nav-background: #1c110f;
@@ -11,6 +14,7 @@ html,
 body {
     height: 100%;
     font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 40px;
 }
 
 jumbotron {
@@ -25,6 +29,10 @@ jumbotron {
 
 .section-title {
 	margin: 30px, 0;
+}
+
+.thumbnail {
+	padding:0;
 }
 
 footer {
@@ -48,4 +56,9 @@ footer {
 
 .section-gray {
 	background-color: $section-background-primary;
+}
+
+.img-fluid {
+	padding: 0;
+	width: 100%;
 }
