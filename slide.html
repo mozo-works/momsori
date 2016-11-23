@@ -12,7 +12,7 @@ layout: default
   {% assign works = site.works | sort:"id" | reverse  %}
   {% for work in works %}
     <div class="item {% if forloop.first == true %}active{% endif %}">
-      <a href="{{ work.url | prepend: site.github.url }}">
+      <a href="{{ work.url }}">
         <img class="image-fluid" style="width:100%" src="/images/{{ work.img }}/banner.jpg" alt="{{ work.title }}">
       </a>
       <div class="carousel-caption">
@@ -21,9 +21,9 @@ layout: default
         <br/>
       </div>
     </div>
-  {% endfor %} 
+  {% endfor %}
   </div>
-</div> 
+</div>
 
 <div class="main-section  section-white">
   <div class="container">
@@ -73,7 +73,7 @@ layout: default
         <img src="/images/kimjinyoung.jpg" class="figure-img img-fluid" alt="보이스씨어터 몸MOM소리 김진영 대표">
         <figcaption class="figure-caption text-xs-right">김진영 대표</figcaption>
       </figure>
-</div>      
+</div>
     </div>
   </div>
 </div>
