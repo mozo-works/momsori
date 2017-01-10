@@ -1,0 +1,26 @@
+---
+layout: null
+---
+
+{{ jekyll.environment }}
+{{ page }}
+
+{% comment %}
+
+{{ site.courses.size }}
+{% for course in site.courses %}
+{{ course.slug }} - {{ course.title }}
+{% endfor %}
+
+{% for group in site.data.courses-order %}
+  {% assign items = group | split: ' - ' %}
+  {{ items | inspect }}
+  <div class="group clearfix">
+    <h3 class="text-success">{{ items | first }}</h3>
+    {% for item in items %}{% if forloop.index != 1 %}{% assign title = item %}{% include course-list-item.html %}{% endif %}{% endfor %}
+  </div>
+{% endfor %}
+
+
+
+{% endcomment %}

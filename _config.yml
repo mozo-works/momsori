@@ -7,6 +7,14 @@ baseurl: ''
 timezone: 'Asia/Seoul'
 permalink: pretty
 
+# SEO
+facebook:
+  app_id: 618140558345676
+  publisher: https://www.facebook.com/momsori
+logo:
+google_site_verification:
+google_analytics:
+
 # Build
 exclude:
   - .jekyll-metadata
@@ -16,6 +24,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
+  - TODO.md
 
 sass:
   style: compressed
@@ -23,6 +32,12 @@ sass:
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  entity_output: :as_input
+  hard_wrap: true
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # collections
 collections:
@@ -34,6 +49,13 @@ collections:
     permalink: /course/:path/
 
 defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image:
+        twitter:
+        facebook:
   -
     scope:
       path: _works
