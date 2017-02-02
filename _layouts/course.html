@@ -2,13 +2,45 @@
 layout: default
 ---
 
-<div class="jumbotron">
+<div class="jumbotron page-header" style="background-image:url({{ '/assets/images/course/' | append: page.slug | append: '/banner.jpg' }});">
   <div class="container">
-    <h1 class="display-6">{{ page.title }}</h1>
-    <h3>{{ page.description }} </h3>
-   </div>
+    <h1 class="display-3 text-white">{{ page.title }}</h1>
+    <h3 class="display-4">{{ page.subtitle }}</h3>
+  </div>
 </div>
 
 <div class="container">
-  {{ content }}
+  <div class="row">
+    <div class="col-sm-8 content">
+      {{ content }}
+
+      {% if page.video.size > 0 %}
+      <h2 class="m-t-2">영상</h2>
+      {% for item in page.video %}
+      <div class="embed-responsive embed-responsive-16by9 m-t-2">
+        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ item }}" allowfullscreen></iframe>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      <div class="m-t-2">
+      {% for file in site.static_files %}
+        {% assign course_image_directory = '/assets/images/course/' | append: page.slug %}
+        {% if file.path contains course_image_directory %}
+        {% unless file.path contains 'banner.jpg' or file.path contains 'thumb.jpg'%}
+        <p class="m-y-2"><img src="{{ file.path }}" alt="" class="img-responsive" /></p>
+        {% endunless %}
+        {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+    <div class="col-sm-3 col-sm-offset-1 sidebar">
+      <div class="sidebar-module">
+        <ol id="course-meta" class="list-unstyled">
+          {{ page.meta | escape | markdownify }}
+          {% if page.doc %}<li><p><a href="{{ page.doc }}" class="btn btn-info"><i class="fa fa-download" aria-hidden="true"></i> introduction</a></p></li>{% endif %}
+        </ol>
+      </div>
+    </div>
+  </div>
 </div>

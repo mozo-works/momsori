@@ -1,0 +1,22 @@
+
+.front {
+  #front-banner {
+    padding: 80px 32px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-size: cover;
+    .bg-warning {
+      display: inline-block;
+      padding: 5px;
+    }
+  }
+  #front-about {
+    h2 {
+      margin-top: 0;
+    }
+    #fb-page-btn {
+      background: rgb(66, 103, 178);
+      color: #fff;
+    }
+  }
+}

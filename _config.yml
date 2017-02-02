@@ -1,8 +1,12 @@
 # Meta
-name: 보이스씨어터 몸소리
+name: 보이스씨어터 몸MOM소리
 description: 보이스씨어터 ‘몸MOM소리’는 소리가 몸과 맘과 자연을 이어주는 통로라는 것을 인식하고, 이를 바탕으로 소리 재료를 본격적으로 실험하여 창작한 작품으로 여러분과 공명하고자 합니다.
 url: http://voicetheater.net
 baseurl: ''
+address: 경기도 과천시 부림 4길 55, 2층
+postal_code: 13830
+phone: 010-7225-2777
+email: momsori2777@hanmail.net
 
 timezone: 'Asia/Seoul'
 permalink: pretty
@@ -11,7 +15,7 @@ permalink: pretty
 facebook:
   app_id: 618140558345676
   publisher: https://www.facebook.com/momsori
-logo:
+logo: momsori.gif
 google_site_verification:
 google_analytics:
 

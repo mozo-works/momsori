@@ -2,15 +2,28 @@
 layout: default
 ---
 
-<div class="jumbotron">
+<div class="jumbotron page-header">
   <div class="container">
-    <h1 class="display-6">보이스씨어터컴퍼니 몸소리</h1>
+    <img src="/assets/images/momsori.gif" alt="보이스씨어터 몸MOM소리" class="pull-right" />
+    <h1 class="display-3">소개</h1>
   </div>
 </div>
 
-<div class="container">
-  {{ content }}
+<div class="container about">
+  <div class="col-lg-8 about-content">
+    {{ content }}
+  </div>
+  <div class="col-lg-3 col-lg-offset-1 about-sidebar">
+    <div class="sidebar-module">
+
+      <ol class="list-unstyled">
+        {% for item in site.data.about-nav %}
+        <li>
+          <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
+          <p>{{ item.description | markdownify }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
 </div>
-
-
-{% include todo.html text="소개 및 활동 연혁 최신 정보 업데이트" %}

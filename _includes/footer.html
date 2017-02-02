@@ -1,6 +1,12 @@
 <footer class="footer bg-inverse">
 	<div class="container">
-		<p class="text-xs-center font-weight-bold">Copyright © {{ site.name }}. All rights reserved. since 2001</p>
+		<span>Copyright © {{ site.name }}. All rights reserved. since 2001</span>
+    <address>
+      <strong>{{ site.name }}</strong> |  {{ site.address }} (우) {{ site.postal_code }} |
+      <a href="mailto:#">{{ site.email }}</a>
+    </address>
 	</div>
 </footer>
 
+<script src="/assets/javascripts/jquery.min.js"></script>
+<script src="/assets/javascripts/bootstrap.min.js"></script>

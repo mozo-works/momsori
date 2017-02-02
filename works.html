@@ -3,29 +3,14 @@ layout: default
 
 ---
 
-<div class="jumbotron">
+<div class="jumbotron page-header">
   <div class="container">
-    <h1 class="display-4">작품</h1>
+    <h1 class="display-3">작품</h1>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-  {% assign works = site.works | sort:"wid" | reverse  %}
-  {% for work in works %}
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="/images/{{ work.img }}/thumb.jpg" alt="{{ work.title }}">
-        <div class="caption">
-          <h3>{{ work.title }}</h3>
-          <p>{{ work.subtitle }}</p>
-          <p><a href="{{ work.url }}" class="btn btn-primary" role="button">더 알아보기</a></p>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
+  {% include work_grid.html %}
   </div>
 </div>
-
-{% include todo.html text="태초에 하나가 있었다 등 공연 추가" %}
-

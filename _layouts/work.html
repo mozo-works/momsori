@@ -1,111 +1,46 @@
 ---
 layout: default
 ---
-<div class="jumbotron" style="background-image:url({{ page.banner }}); background-size: cover">
+
+<div class="jumbotron page-header" style="background-image:url({{ '/assets/images/work/' | append: page.slug | append: '/banner.jpg' }});">
   <div class="container">
-
-  <div class="col-md-9">
-    <h1 class="display-6" style="color:#ffffff">{{ page.title }}</h1>
-    <h3 class="display-8" style="color:#eeeeee">{{ page.subtitle }}
-
-</h3>
-    <br/><br/>
+    <h1 class="display-3 text-white">{{ page.title }}</h1>
+    <h3 class="display-4">{{ page.subtitle }}</h3>
+  </div>
 </div>
-
-
-
-
-    <div class="col-md-3">
-
-        <div class="card card-block">
- <!--      <h3 class="card-title">Special title treatment</h3>
-      With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a> -->
-<p class="card-text">
-형식: {{ page.type }}<br/>
-창작년도: {{ page.c_year }}년<br/>
-창작자: {{ page.creator }}<br/>
-공연자: {{ page.performer }}<br/>
-연출자: 김진영<br/>
-소요시간: {{ page.r_time }}분<br/></p>
-    </div>
-
-</div>
-
-
-  </div> <!-- container -->
-</div> <!-- jubmotron -->
-
-
 
 <div class="container">
+  <div class="row">
+    <div class="col-sm-8 content">
+      {{ content }}
 
-    <div class="row">
+      {% if page.video.size > 0 %}
+      <h2 class="m-t-2">영상</h2>
+      {% for item in page.video %}
+      <div class="embed-responsive embed-responsive-16by9 m-t-2">
+        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ item }}" allowfullscreen></iframe>
+      </div>
+      {% endfor %}
+      {% endif %}
 
-        <div class="col-md-8">
-
-            {{ content }}
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title page-header">관련 사진</h2>
-                </div>
-            {% for i in (1..page.images) %}
-            <!-- <div class="col-sm-3 col-xs-6"> -->
-                <img src="/images/{{ page.img }}/img00{{ i }}.jpg" style="border-radius:0; width:70%; margin:10px;" class="img-responsive img-fluid img-thumbnail"/> <br/>
-            <!-- </div> -->
-            {% endfor %}
-            </div>
-
-        </div>
-
-        <div class="col-md-4">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title page-header">관련 동영상</h2>
-                </div>
-                <div class="col-lg-12 video">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ page.video }}" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <hr/>
-            
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title page-header">다른 작품들</h2>
-                </div>
-                {% assign works = site.works | sort:"id" | reverse  %}
-                {% for work in works %}
-                {% if work.id != page.id %}
-                <div class="col-lg-12">
-                    <div class="card">
-                        <a href="{{ work.url }}"><img class="card-img-top img-fluid" src="/images/{{ work.img }}/thumb.jpg" alt="Card image cap"></a>
-                        <div class="card-block">
-                      <h4 class="card-title"><a href="{{ work.url }}">{{ work.title }}</a></h4>
-                      <p class="card-text">{{ work.description }}</p>
-                        </div>
-                    </div>
-                </div>
-                {% endif %}
-                {% endfor %}  
-            </div>
-
-
-        </div>
-
+      <div class="m-t-2">
+      {% for file in site.static_files %}
+        {% assign work_image_directory = '/assets/images/work/' | append: page.slug %}
+        {% if file.path contains work_image_directory %}
+        {% unless file.path contains 'banner.jpg' or file.path contains 'thumb.jpg'%}
+        <p class="m-y-2"><img src="{{ file.path }}" alt="" class="img-responsive" /></p>
+        {% endunless %}
+        {% endif %}
+      {% endfor %}
+      </div>
     </div>
-
-
-
-
-
-
-
-
-
-
+    <div class="col-sm-3 col-sm-offset-1 sidebar">
+      <div class="sidebar-module">
+        <ol id="work-meta" class="list-unstyled">
+          {{ page.meta | escape | markdownify }}
+          {% if page.doc %}<li><p><a href="{{ page.doc }}" class="btn btn-info"><i class="fa fa-download" aria-hidden="true"></i> introduction</a></p></li>{% endif %}
+        </ol>
+      </div>
+    </div>
+  </div>
 </div>

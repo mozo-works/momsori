@@ -4,6 +4,16 @@
 @import "bootstrap";
 @import "bootswatch_slate";
 
-.navbar-fixed-top {
-  border-radius: 0;
+@import "_components/layout";
+@import "_components/type";
+@import "_components/front";
+@import "_components/pages";
+@import "_components/works";
+@import "_components/courses";
+
+
+.front {
+  #front-banner {
+    background-image: url('/assets/images/banners/{{ site.data.front.banner.bg-image }}');
+  }
 }

@@ -1,0 +1,40 @@
+
+.wf-loading *,
+.wf-inactive * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:lang(en).wf-active * {
+  font-family: 'Noto Sans KR', 'Malgun Gothic';
+}
+
+:lang(en).wf-active * {
+  font-family: 'Roboto';
+}
+
+:lang(ko).wf-active .fa,
+:lang(en).wf-active .fa {
+  font-family: 'FontAwesome';
+}
+
+// Type display classes
+.display-1 {
+  font-size: $display1-size !important;
+  font-weight: $display1-weight;
+  line-height: $display-line-height;
+}
+.display-2 {
+  font-size: $display2-size !important;
+  font-weight: $display2-weight;
+  line-height: $display-line-height;
+}
+.display-3 {
+  font-size: $display3-size !important;
+  font-weight: $display3-weight;
+  line-height: $display-line-height;
+}
+.display-4 {
+  font-size: $display4-size !important;
+  font-weight: $display4-weight;
+  line-height: $display-line-height;
+}

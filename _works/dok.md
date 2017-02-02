@@ -1,20 +1,19 @@
 ---
 layout: work
-id: 3
+order: 3
 title: 보이스 퍼포먼스 '독'
-subtitle: 쉿! 배꼽이 말하기 시작했어!
-e_title: Voice performance 'Dok'
-c_year: 2008
-type: 보이스 퍼포먼스
-creator: 김진영
-performer: 김진영, 김미나, 이예지
-r_time: 60
-objet: 보이스, 의상
-img: dok
-video: gf1xqfowZ_o
-dir: dok
-banner: /images/dok/banner.jpg
-images: 4
+subtitle: 물,불,흙.. 소리가 가지는 물성의 이미지들
+slug: dok
+video:
+  gf1xqfowZ_o
+meta: |
+  - 형식: 보이스 퍼포먼스
+  - 창작년도: 2008
+  - 창작자: 김진영
+  - 공연자: 김진영, 김미나, 이예지
+  - 연출자: 김진영
+  - 오브제: 보이스, 의상
+  - 소요시간: 약 60분
 
 ---
 
