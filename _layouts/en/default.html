@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body{% if page.url %} class="{{ page.url | replace:'/',' ' | lstrip | rstrip }}{% if page.url == '/en/' %} front{% endif %}"{% endif %}>
+    {% if site.google_analytics and jekyll.environment == 'production' %}{% include ga.html %}{% endif %}
+
+    {% include en/header.html %}
+
+    {{ content }}
+
+    {% include en/footer.html %}
+
+    {% include en/webfont.html %}
+  </body>
+</html>

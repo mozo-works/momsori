@@ -1,0 +1,61 @@
+---
+layout: en/default
+---
+
+{% include en/facebook.html %}
+
+<div id="front-banner" class="jumbotron page-header">
+  <div class="container"{% if site.data.front.en.banner.link %} onclick="location.href='{{ site.data.front.en.banner.link }}'"{% endif %}>
+    {% if site.data.front.en.banner.title %}
+    <h1 class="display-2"><span class="bg-primary">{{ site.data.front.en.banner.title }}</span></h1>
+    {% endif %}
+    <ul class="list-unstyled">
+      {% if site.data.front.en.banner.when %}<li><span class="bg-primary lead">{{ site.data.front.en.banner.when }}</span></li>{% endif %}
+      {% if site.data.front.en.banner.where %}<li><span class="bg-primary lead">{{ site.data.front.en.banner.where }}</span></li>{% endif %}
+    </ul>
+    {% if site.data.front.en.banner.description %}
+    <p>{{ site.data.front.en.banner.description }}</p>
+    {% endif %}
+    {% if site.data.front.en.banner.ticket %}
+    <p class="lead">
+      <a class="btn btn-success btn-lg" href="{{ site.data.front.en.banner.ticket }}" role="button">Buy tickets</a>
+    </p>
+    {% endif %}
+  </div>
+</div>
+
+<div id="front-about" class="jumbotron bg-default m-b-0">
+  <div class="container">
+    <div class="col-md-8">
+      <p class="lead">
+        {{ site.data.front.en.introduction | newline_to_br }}
+        <p><img src="/assets/images/{{ site.logo }}" alt="로고" class="img-responsive" /></p>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h2>{{ site.en.name }}</h2>
+      <ul class="list-inline">
+        <li>
+          <p>
+            <a class="btn btn-lg btn-success" href="/about/" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> &nbsp;&nbsp;Read more</a>
+          </p>
+        </li>
+        <li>
+          <p><a class="btn btn-lg" id="fb-page-btn" href="{{ site.facebook.publisher }}" target="_blank" style=""><i class="fa fa-facebook" aria-hidden="true"></i> &nbsp;&nbsp;Facebook page</a></p>
+        </li>
+      </ul>
+      <div class="fb-like" data-href="{{ site.facebook.publisher }}" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+    </div>
+  </div>
+</div>
+
+<div id="front-banner" class="jumbotron m-t-0">
+  <div class="container" onclick="location.href='/en/work/city-cave/'">
+    <h1 class="display-2 pull-right"><span class="bg-primary">Voice Caves in the City</span></h1>
+  </div>
+</div>
+{% comment %}
+  {% include work_grid.html type="block" %}
+{% endcomment %}
+
+</div>

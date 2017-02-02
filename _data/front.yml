@@ -4,49 +4,25 @@
 introduction: |
   ‘몸MOM소리’는 몸의 소리, 맘(마음)의 소리, 그리고 태아시절에 이미 우리의 귀가 들었던 엄마의 소리를 뜻합니다. 목소리를 통해 우리의 몸 공간과 우리를 품고 있는 어머니의 몸 같은 자연의 공간이 함께 진동할 때, 우리는 ‘목소리’가 아닌 ‘몸MOM소리’를 되찾게 될 것입니다. 보이스씨어터 ‘몸MOM소리’는 소리가 몸과 맘과 자연을 이어주는 통로라는 것을 인식하고, 이를 바탕으로 소리 재료를 본격적으로 실험하여 창작한 작품으로 여러분과 공명하고자 합니다.
 
-history: |
-  * 12‘ 서울어린이연극상 최우수작품상, 연기상, 최고인기상 수상
-  * 12‘ 세계인형극총회(중국청두) 탁월한시각연출상 수상
-  * 10‘ 김천가족극제 우수남자연기상 수상
-  * 09’ 서울어린이연극상 최우수인기작품상 수상
-  * 08’-16’ 아르헨티나, 싱가폴, 중국, 이스라엘, 터키, 인도, 루마니아, 일본, 대만 국제공연예술축제 공식초청!
-  * 11’-13‘ 서울대학교, 국립현대미술관, 백남준아트센터 초청공연!
-  * 09’-13’ 아시테지 여름축제, 하이서울페스티벌, 과천한마당축제, 안산국제거리극축제, 의정부국제음악극축제, 고양호수예술축제 공식초청!
-  * 09‘-15’ 국립극장, 서울대미술관, 서울대입학본부, 국립현대미술관, 예술의전당, 한국과학창의재단, 한국문화예술교육진흥원, 소마미술관, (광주, 충남, 인천, 경북, 전북)문화예술교육지원센터 초청 ‘문화예술교육웍샵’ 진행!
-  * 11‘-15’ 경희대, 서울신학대 교수연수, 서울성모병원, 기아자동차 임직원 연수 진행
-
 banner:
   title: 도시소리 동굴 프로젝트
-  when: 2016년 7월 10 ~ 25일
-  where: 인도 3개 도시(첸나이, 방갈로르, 코치) 초청투어
+  when:
+  where:
   description:
   bg-image: banner.jpg
-  link: /work/dok/
+  link: /work/city-cave/
   long-image:
   ticket:
 
-courses_order:
-  - 몸으로 만드는 예술품
-  - Visual Theater 워크숍
-  - 시(詩) 퍼포먼스 워크숍
-
 en:
   introduction: |
-    CCOTBBAT, a visual theatre company, is a professional arts group which integrates fine arts and theatre for performance and organizes art-experienced workshops. The company aims at experience-oriented arts that the experience could be the art itself.
-  history: |
-    The company has been invited officially by numerous international festivals in Europe, Asia and South America and has received various awards, such as Seoul Children’s Theatre Awards and World Puppetry Congress ‘Excellent Visual Effect’.
-
-    ### Key Performances
-
-    * media painting performance 'Paper Window'
-    * an imaginative media performance 'Giant's Table'
-
+    MOMSORI is a performance art troupe that creates and presents pieces crossing the borders of theater and music using voice as the main medium. Kim Jin-young, a graduate of the School of Visual Theater in Jerusalem, Israel, that established CCOT with Lee Cheol-sung and created various performances, established the troupe in 2008 after leaving CCOT.
   banner:
-    title: 'Paper Window'
-    when: 10 ~ 25th Jul. 2016
-    where: Tour in India (Chennai, Bangalore, Kochi)
+    title: Voice Caves in the City
+    when:
+    where:
     description:
-    bg-image: 20160831/IMG_9887.jpeg
-    link: /en/work/paper-window/
+    bg-image: banner.jpg
+    link: /en/work/city-cave/
     long-image:
     ticket:

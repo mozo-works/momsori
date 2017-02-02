@@ -5,8 +5,13 @@ url: http://voicetheater.net
 baseurl: ''
 address: 경기도 과천시 부림 4길 55, 2층
 postal_code: 13830
-phone: 010-7225-2777
 email: momsori2777@hanmail.net
+
+en:
+  name: MOMSORI
+  description:
+  url: http://voicetheater.net/en/
+  address: 55, Burim 4-gil, Gwacheon-si, Gyeonggi-do, 13830, Republic of Korea
 
 timezone: 'Asia/Seoul'
 permalink: pretty
@@ -51,6 +56,9 @@ collections:
   courses:
     output: true
     permalink: /course/:path/
+  en_works:
+    output: true
+    permalink: /en/work/:path/
 
 defaults:
   -
@@ -70,3 +78,8 @@ defaults:
       path: _courses
     values:
       layout: course
+  -
+    scope:
+      path: _en_works
+    values:
+      layout: en/work
