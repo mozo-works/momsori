@@ -1,16 +1,26 @@
 
 .front {
   #front-banner {
-    padding: 80px 32px;
-    margin-top: 50px;
+    padding: 0;
+    margin-top: 40px;
     margin-bottom: 0;
-    background-size: cover;
+    background-size: 100%;
+    .box {
+      height: 560px;
+      margin-right: -15px;
+      margin-top: -15px;
+    }
+    h1 {
+      margin-left: 1em;
+      padding-top: 1em;
+    }
     .bg-warning {
       display: inline-block;
       padding: 5px;
     }
   }
   #front-about {
+    padding: 3em 0;
     h2 {
       margin-top: 0;
     }

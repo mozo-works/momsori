@@ -1,4 +1,4 @@
-  {% assign works = site.works | sort:"order" | reverse %}{% if include.type == 'block' %}
+  {% assign works = site.en_works | sort:"order" | reverse %}{% if include.type == 'block' %}
   {% for work in works limit:3 %}
     <div class="col-sm-6 col-md-4">
       <div class="work-grid">
@@ -6,7 +6,7 @@
         <div class="caption">
           <h3><a href="{{ work.url }}">{{ work.title }}</a></h3>
           <p>{{ work.subtitle }}</p>
-          <p><a href="{{ work.url }}" class="btn btn-primary" role="button">더 알아보기</a></p>
+          <p><a href="{{ work.url }}" class="btn btn-primary" role="button">more</a></p>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
         <div class="caption">
           <h3><a href="{{ work.url }}">{{ work.title }}</a></h3>
           <p>{{ work.subtitle }}</p>
-          <p><a href="{{ work.url }}" class="btn btn-primary" role="button">더 알아보기</a></p>
+          <p><a href="{{ work.url }}" class="btn btn-primary" role="button">more</a></p>
         </div>
       </div>
     </div>

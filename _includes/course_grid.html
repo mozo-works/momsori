@@ -1,26 +1,22 @@
   {% assign courses = site.courses | sort:"order" | reverse  %}{% if include.type == 'block' %}
   {% for course in courses limit:2 %}
     <div class="col-sm-6">
-      <div class="thumbnail">
-        <a href="{{ course.url }}"><img src="/assets/images/course/{{ course.slug }}/thumb.jpg" alt="{{ course.title }}" style="width: 100%;"></a>
-        <div class="caption">
-          <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
-          <p>{{ course.subtitle }}</p>
-          <p><a href="{{ course.url }}" class="btn btn-primary" role="button">더 알아보기</a></p>
-        </div>
+      <a href="{{ course.url }}"><img src="/assets/images/course/{{ course.slug }}/thumb.jpg" alt="{{ course.title }}" style="width: 100%;"></a>
+      <div class="caption">
+        <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
+        <p>{{ course.subtitle }}</p>
+        <p><a href="{{ course.url }}" class="btn btn-primary" role="button">더 알아보기</a></p>
       </div>
     </div>
   {% endfor %}
   {% else %}
   {% for course in courses %}
     <div class="col-sm-6">
-      <div class="thumbnail">
-        <a href="{{ course.url }}"><img src="/assets/images/course/{{ course.slug }}/thumb.jpg" alt="{{ course.title }}" style="width: 100%;"></a>
-        <div class="caption">
-          <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
-          <p>{{ course.subtitle }}</p>
-          <p><a href="{{ course.url }}" class="btn btn-primary" role="button">더 알아보기</a></p>
-        </div>
+      <a href="{{ course.url }}"><img src="/assets/images/course/{{ course.slug }}/thumb.jpg" alt="{{ course.title }}" style="width: 100%;"></a>
+      <div class="caption">
+        <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
+        <p>{{ course.subtitle }}</p>
+        <p><a href="{{ course.url }}" class="btn btn-primary" role="button">더 알아보기</a></p>
       </div>
     </div>
   {% endfor %}

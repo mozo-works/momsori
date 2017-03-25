@@ -1,12 +1,19 @@
 .works {
   .jumbotron.page-header {
-    background-image: url('/assets/images/banners/works.jpg');
-    min-height: 240px;
+    background: #1c1e22;
+    // background-image: url('/assets/images/banners/works.jpg');
   }
 }
 
 .work-grid {
-  .thumbnail {
-    height: 420px;
+  height: 420px;
+  img {
+    max-width: 100%;
   }
+}
+
+.work .jumbotron.page-header {
+  background-size: cover;
+  margin-top: 50px;
+  min-height: 560px;
 }

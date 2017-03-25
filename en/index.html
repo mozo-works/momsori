@@ -4,23 +4,25 @@ layout: en/default
 
 {% include en/facebook.html %}
 
-<div id="front-banner" class="jumbotron page-header">
-  <div class="container"{% if site.data.front.en.banner.link %} onclick="location.href='{{ site.data.front.en.banner.link }}'"{% endif %}>
-    {% if site.data.front.en.banner.title %}
-    <h1 class="display-2"><span class="bg-primary">{{ site.data.front.en.banner.title }}</span></h1>
-    {% endif %}
-    <ul class="list-unstyled">
-      {% if site.data.front.en.banner.when %}<li><span class="bg-primary lead">{{ site.data.front.en.banner.when }}</span></li>{% endif %}
-      {% if site.data.front.en.banner.where %}<li><span class="bg-primary lead">{{ site.data.front.en.banner.where }}</span></li>{% endif %}
-    </ul>
-    {% if site.data.front.en.banner.description %}
-    <p>{{ site.data.front.en.banner.description }}</p>
-    {% endif %}
-    {% if site.data.front.en.banner.ticket %}
-    <p class="lead">
-      <a class="btn btn-success btn-lg" href="{{ site.data.front.en.banner.ticket }}" role="button">Buy tickets</a>
-    </p>
-    {% endif %}
+<div id="front-banner" class="jumbotron">
+  <div class="container">
+    <div class="box" style="background: url('/assets/images/banners/{{ site.data.front.en.banner.bg-image }}'); background-size: cover; ">
+      {% if site.data.front.en.banner.title %}
+      <h1 class="display-1">{% if site.data.front.en.banner.link %}<a href="{{ site.data.front.en.banner.link }}">{% endif %}<span class="bg-primary">{{ site.data.front.en.banner.title | newline_to_br }}</span>{% if site.data.front.en.banner.link %}</a>{% endif %}</h1>
+      {% endif %}
+      <ul class="list-unstyled">
+        {% if site.data.front.en.banner.when %}<li><span class="bg-primary lead">{{ site.data.front.en.banner.when }}</span></li>{% endif %}
+        {% if site.data.front.en.banner.where %}<li><span class="bg-primary lead">{{ site.data.front.en.banner.where }}</span></li>{% endif %}
+      </ul>
+      {% if site.data.front.en.banner.description %}
+      <p>{{ site.data.front.en.banner.description }}</p>
+      {% endif %}
+      {% if site.data.front.en.banner.ticket %}
+      <p class="lead">
+        <a class="btn btn-success btn-lg" href="{{ site.data.front.en.banner.ticket }}" role="button">Tickets</a>
+      </p>
+      {% endif %}
+    </div>
   </div>
 </div>
 
@@ -49,13 +51,13 @@ layout: en/default
   </div>
 </div>
 
-<div id="front-banner" class="jumbotron m-t-0">
-  <div class="container" onclick="location.href='/en/work/city-cave/'">
-    <h1 class="display-2 pull-right"><span class="bg-primary">Voice Caves in the City</span></h1>
+<div class="main-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2><a href="/en/works/">Works</a></h2>
+      </div>
+      {% include en/work_grid.html type="block" %}
+    </div>
   </div>
-</div>
-{% comment %}
-  {% include work_grid.html type="block" %}
-{% endcomment %}
-
 </div>

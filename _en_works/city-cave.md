@@ -1,20 +1,27 @@
 ---
 layout: en/work
-order: 4
-title: Voice Caves in the City
+order: 5
+title: Voice Caves in the city
 subtitle: Space-specific Voice Performance
 slug: city-cave
 video:
   oVV33d55Kb8
 meta: |
-  - Running Time: 40 min
-  - Stage Size: 2, 3 separate spaces in walking distance, but with different acoustics.
-  - Director : Jinyoung KIM
-  - Performer : Yoonmi Han, Jiyoun KIM, Heejyun Jang, Seulhee baek, Jinyoung KIM
-  - Text: Almost no lines / Korean (1, 2 sentences through the speaker)
+  - Creator : Kim Jinyoung
+  - Director : Km Jinyoung
+  - Performers : Han Yunmi, Hang Heejeon, Kim hyejin, Kim jiyoun, Kim Jinyoung
+  - Duration : 45 min.
+
 ---
 
+## “Sounds from bodies vibrate the soul of the city”
 
-The performance invites the audience to a sensitive world of resonance that blooms when the venue's sound waves and energy meet, only using pure voice without a microphone.
+* 2016 Ansan Street Art Festival (official Invitation)
+* 2016 Seoul Street Art Festival officially invited in Hi-Seoul Festival
+* 2015 Created with support by Seoul Street Arts Center(SSAC)/ Performed in SSAC.
+
+"Voice Caves in the City" is a space-specific voice performance that moves with the audience in search for places with cave-like acoustics all over the city. 
+
+The performance invites the audience to a sensitive world of resonance that blooms when the venue's sound waves and energy meet, only using pure voice without a microphone. 
 
 The performance deals with the lost relationship between voice and space, muffled voices within society and instinctive sounds made with the audience through connected, yet independent voice improvisations. This healing show can restore the lost instincts of life.

@@ -1,7 +1,10 @@
 ---
 
-- title: about
+- title: About
   url: /en/about/
 
-- title: works
-  url: /en/work/city-cave/
+- title: Works
+  url: /en/works/
+
+- title: Workshop
+  url: /en/workshop

@@ -10,10 +10,3 @@
 @import "_components/pages";
 @import "_components/works";
 @import "_components/courses";
-
-
-.front {
-  #front-banner {
-    background-image: url('/assets/images/banners/{{ site.data.front.banner.bg-image }}');
-  }
-}
