@@ -15,5 +15,16 @@
 .work .jumbotron.page-header {
   background-size: cover;
   margin-top: 50px;
-  min-height: 560px;
+  @media(max-width: $screen-xs-max) {
+    min-height: 240px;
+    h1.display-3 {
+      font-size: 3rem !important;
+    }
+    h3.display-4 {
+      font-size: 2rem !important;
+    }
+  }
+  @media(min-width: $screen-sm-max) {
+    min-height: 560px;
+  }
 }
