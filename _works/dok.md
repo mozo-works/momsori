@@ -2,7 +2,10 @@
 layout: work
 order: 3
 title: 보이스 퍼포먼스 '독'
-subtitle: 물,불,흙.. 소리가 가지는 물성의 이미지들
+subtitle: |
+  물,불,흙..
+  소리가 가지는
+  물성의 이미지들
 slug: dok
 video:
   gf1xqfowZ_o

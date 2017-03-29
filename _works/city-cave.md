@@ -2,7 +2,10 @@
 layout: work
 order: 4
 title: 도시소리동굴
-subtitle: 잃어버린 에너지를 회복시켜 줄 도시소리동굴로의 초대.
+subtitle: |
+  잃어버린 에너지를
+  회복시켜 줄
+  도시소리동굴로의 초대.
 slug: city-cave
 video:
   oVV33d55Kb8

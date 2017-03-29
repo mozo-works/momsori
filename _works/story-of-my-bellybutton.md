@@ -2,7 +2,10 @@
 layout: work
 order: 2
 title: 나의 배꼽 이야기
-subtitle: 쉿! 배꼽이 말하기 시작했어!
+subtitle: |
+  쉿!
+  배꼽이
+  말하기 시작했어!
 slug: bellybutton
 video:
   v6FWZ1pgXa4

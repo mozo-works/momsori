@@ -2,7 +2,9 @@
 layout: work
 order: 5
 title: 여기, 지금
-subtitle: 당신의 소리로 만드는 보이스테라피콘서트
+subtitle: |
+  당신의 소리로 만드는
+  보이스테라피콘서트
 slug: here-now
 video:
 meta: |

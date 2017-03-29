@@ -2,7 +2,9 @@
 layout: work
 order: 1
 title: 꿈 70-18
-subtitle: 노파의 가면 뒤에 짓눌린 소녀의 얼굴
+subtitle: |
+  노파의 가면 뒤에
+  짓눌린 소녀의 얼굴
 slug: dream
 video:
   9qSkdO900Kg
