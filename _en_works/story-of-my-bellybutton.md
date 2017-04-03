@@ -1,8 +1,12 @@
 ---
 layout: en/work
-order: 2
-title: The Story of My Belly Button
-subtitle: Costume-objet Theater & Voice performance
+order: 3
+title: |
+  The Story of
+  My Belly Button
+subtitle: |
+  Costume-objet Theater
+  & Voice performance
 slug: bellybutton
 video:
   v6FWZ1pgXa4

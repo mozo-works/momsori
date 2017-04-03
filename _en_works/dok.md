@@ -1,8 +1,11 @@
 ---
 layout: en/work
-order: 3
+order: 5
 title: Voice Performance ‘JAR’
-subtitle: Combining voice performance and workshop.
+subtitle: |
+  Combining
+  voice performance
+  and workshop.
 slug: dok
 video:
   gf1xqfowZ_o

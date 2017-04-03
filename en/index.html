@@ -30,7 +30,7 @@ layout: en/default
   <div class="container">
     <div class="col-md-8">
       <p class="lead">
-        {{ site.data.front.en.introduction | newline_to_br }}
+        {{ site.data.front.en.introduction | markdownify }}
         <p><img src="/assets/images/{{ site.logo }}" alt="로고" class="img-responsive" /></p>
       </p>
     </div>
@@ -39,7 +39,7 @@ layout: en/default
       <ul class="list-inline">
         <li>
           <p>
-            <a class="btn btn-lg btn-success" href="/about/" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> &nbsp;&nbsp;Read more</a>
+            <a class="btn btn-lg btn-success" href="/en/about/" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> &nbsp;&nbsp;Read more</a>
           </p>
         </li>
         <li>

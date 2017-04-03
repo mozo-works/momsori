@@ -1,8 +1,10 @@
 ---
 layout: en/work
-order: 1
+order: 4
 title: Dream 70-18
-subtitle: Mask-marionette, costume-objet theater
+subtitle: |
+  Mask-marionette,
+  costume-objet theater
 slug: dream
 video:
   9qSkdO900Kg

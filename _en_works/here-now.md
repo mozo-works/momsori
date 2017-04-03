@@ -1,8 +1,12 @@
 ---
 layout: en/work
-order: 4
-title: Hic et Nunc
-subtitle: voice therapy Concert
+order: 5
+title: |
+  Hic et Nunc
+subtitle: |
+  voice
+  therapy
+  Concert
 slug: here-now
 video:
 meta: |
@@ -19,7 +23,11 @@ meta: |
 
 ### 1 day voice therapy workshop + voice improvisation concert
 
+&nbsp;
+
 * 2015 2008 Seoul Cultural Foundation’s choice
+
+&nbsp;
 
 "Voice Caves in the City" is a space-specific voice performance that moves with the audience in search for places with cave-like acoustics all over the city.
 

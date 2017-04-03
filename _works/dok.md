@@ -1,6 +1,6 @@
 ---
 layout: work
-order: 3
+order: 5
 title: 보이스 퍼포먼스 '독'
 subtitle: |
   물,불,흙..

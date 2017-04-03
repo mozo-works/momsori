@@ -19,13 +19,17 @@ banner:
 
 en:
   introduction: |
-    MOMSORI is a performance art troupe that creates and presents pieces crossing the borders of theater and music using voice as the main medium. Kim Jin-young, a graduate of the School of Visual Theater in Jerusalem, Israel, that established CCOT with Lee Cheol-sung and created various performances, established the troupe in 2008 after leaving CCOT.
+    *MOMSORI* is a performance art troupe that creates and presents pieces crossing the borders of theater and music using voice as the main medium.
+    *Kim Jin-young*, a graduate of the School of Visual Theater in Jerusalem, Israel, that established CCOT with Lee Cheol-sung and created various performances, established the troupe in 2008 after leaving CCOT.
   banner:
-    title: Voice Caves in the City
+    title: |
+      Voice
+      Caves
+      in the City
     when:
     where:
     description:
-    bg-image: banner.jpg
+    bg-image: banner2.jpg
     link: /en/work/city-cave/
     long-image:
     ticket:

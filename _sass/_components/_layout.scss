@@ -29,3 +29,9 @@ footer.footer {
   border-top: 1px solid #ccc;
   padding-top: 15px;
 }
+
+@media(max-width: $screen-xs-max) {
+  ul {
+    padding-left: 20px;
+  }
+}

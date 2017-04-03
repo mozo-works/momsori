@@ -1,6 +1,6 @@
 ---
 layout: work
-order: 2
+order: 3
 title: 나의 배꼽 이야기
 subtitle: |
   쉿!
