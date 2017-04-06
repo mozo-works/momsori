@@ -6,7 +6,7 @@ title: 언론보도
 > “기대했던 목소리가 드디어 실체를 드러냈다. 김진영의 목소리는 가파른 산을 부드럽게 오르내리는 것처럼 윤기가 있다. 떡장수 엄마의 목소리, 엄마를 잡아먹는 호랑이의 목소리, 엄마에게 대답하는 소녀의 목소리, 모두 동화에서 이제 막 빠져나온 것처럼 생기발랄하지만 같은 이유로 목소리 자체만의 낮선 특질과도 마주하고 싶다는 마음이 슬며시 솟아올라왔다...  디제리두의 음파장과 김진영의 소리가 거칠게 호흡을 주고받을 때는 눈을 감고 ‘들었을’만큼 호기심이 동했다. 그것은 링가와 요기의 소리였다. 원시적인 형태가 감지되는 섹슈얼한 소리, 그 육감적인 소리는 ‘금기’를 뚫고 나온다 .”
 
 ‘꿈 70-18’ ‘나의 배꼽이야기’-링가와 요기의 소리, 김해진 평,  독립예술웹진 인디언 밥
-http://blog.naver.com/sunamu/50072594562
+<http://blog.naver.com/sunamu/50072594562>
 
 &nbsp;
 
@@ -14,7 +14,7 @@ http://blog.naver.com/sunamu/50072594562
 김진영 :  보이스퍼포먼스는 정확하게 발음한다거나 아름답게 노래 부른다거나 하는 것과는 다르다. 소리로 나 스스로를 들여다보고 그렇게 만들어지는 소리의 또 다른 세계를 관객들과 함께 하고 싶었다. 내 목소리가 매력적이었다면 소리의 또 다른 세계를 관객과 함께 할 수 있었던 것이 아닌가 한다. “
 
 보이스퍼포먼스 ‘독’ 리뷰 “소리는 너무 솔직하다” 보이스퍼포먼스 독의 김진영, 김소연 평
-독립예술웹진 인디언밥. http://indienbob.tistory.com/81
+독립예술웹진 인디언밥. <http://indienbob.tistory.com/81>
 
 &nbsp;
 
@@ -30,3 +30,24 @@ http://blog.naver.com/sunamu/50072594562
 보이스테라피 인터뷰 기사 <Talk about voice > creative culture magazine 1/n, 2011년 겨울 호
 
 &nbsp;
+
+내 안의 우주를 울리는 소리 - 서울시민예술대학 &lt;보이스 테라피 프로젝트&gt;
+<http://m.blog.naver.com/i_sfac/220476155690>
+
+&nbsp;
+
+<div class="embed-responsive embed-responsive-16by9 m-t-2">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/rVWV0hgPBWE" allowfullscreen></iframe>
+</div>
+
+2015년 교통방송, 성북예술창작센터( 현 서울 예술치유허브), 나의 소리를 찾아서'
+<https://youtu.be/rVWV0hgPBWE>
+
+&nbsp;
+
+<div class="embed-responsive embed-responsive-16by9 m-t-2">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/OgkLQ52hvoI" allowfullscreen></iframe>
+</div>
+
+2016 서울시민예술대학 첫 수업 중 김진영 소리즉흥, 성북도원
+<https://youtu.be/OgkLQ52hvoI>

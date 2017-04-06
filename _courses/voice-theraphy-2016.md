@@ -5,7 +5,8 @@ title: 2016년 보이스테라피 프로젝트 2
 subtitle: 물, 불, 공기, 흙의 노래
 slug: voicetherapy16
 video:
-  g3y3Q_L3dMw
+  - g3y3Q_L3dMw
+  - OgkLQ52hvoI
 meta: |
   - 대상:
     - 숨겨진 나의 소리, 나의 마음을 찾고자 하는 성인 누구나.

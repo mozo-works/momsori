@@ -5,7 +5,7 @@ title: 2015년 보이스테라피 프로젝트 1
 subtitle: 진정한 나의 소리를 찾아서
 slug: voicetherapy15
 video:
-  - OgkLQ52hvoI
+  - rVWV0hgPBWE
   - FBuSnwnQ4I0
 meta: |
   - 대상:
