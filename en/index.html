@@ -8,7 +8,7 @@ layout: en/default
   <div class="container">
     <div class="box" style="background: url('/assets/images/banners/{{ site.data.front.en.banner.bg-image }}'); background-size: cover; ">
       {% if site.data.front.en.banner.title %}
-      <h1 class="display-1">{% if site.data.front.en.banner.link %}<a href="{{ site.data.front.en.banner.link }}">{% endif %}<span class="bg-primary">{{ site.data.front.en.banner.title | newline_to_br }}</span>{% if site.data.front.en.banner.link %}</a>{% endif %}</h1>
+      <h2>{% if site.data.front.en.banner.link %}<a href="{{ site.data.front.en.banner.link }}">{% endif %}<span class="bg-primary">{{ site.data.front.en.banner.title | newline_to_br }}</span>{% if site.data.front.en.banner.link %}</a>{% endif %}</h2>
       {% endif %}
       <ul class="list-unstyled">
         {% if site.data.front.en.banner.when %}<li><span class="bg-primary lead">{{ site.data.front.en.banner.when }}</span></li>{% endif %}

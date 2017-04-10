@@ -11,9 +11,10 @@
         margin-right: -15px;
         margin-top: -15px;
       }
-      h1 {
+      h2 {
         margin-left: 1em;
         padding-top: 1em;
+        font-size: 48px;
       }
     }
     @media(max-width: $screen-xs-max) {
@@ -21,8 +22,8 @@
         height: 240px;
         margin: -15px;
       }
-      h1.display-1 {
-        font-size: 4rem !important;
+      h2 {
+        font-size: 3rem !important;
         padding: .5em 0 0 .5em;
       }
     }

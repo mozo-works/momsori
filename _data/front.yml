@@ -12,7 +12,7 @@ banner:
   when:
   where:
   description:
-  bg-image: banner2.jpg
+  bg-image: banner3.jpg
   link: /work/city-cave/
   long-image:
   ticket:
@@ -29,7 +29,7 @@ en:
     when:
     where:
     description:
-    bg-image: banner2.jpg
+    bg-image: banner3.jpg
     link: /en/work/city-cave/
     long-image:
     ticket:
