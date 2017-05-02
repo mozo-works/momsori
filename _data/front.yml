@@ -9,13 +9,13 @@ banner:
     도시
     소리
     동굴
-  when:
-  where:
+  when: 2017년 5월 22일
+  where: 테헤란로의 빌딩
   description:
   bg-image: banner3.jpg
   link: /work/city-cave/
   long-image:
-  ticket:
+  ticket: https://www.facebook.com/jinyoung.kim.71216141/posts/1009887502456353
 
 en:
   introduction: |
