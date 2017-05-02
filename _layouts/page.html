@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="jumbotron page-header">
+  <div class="container">
+    <h1 class="display-3 text-white">{{ page.title }}</h1>
+    <h3 class="display-4">{{ page.subtitle | newline_to_br }}</h3>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 content">
+      {{ content }}
+    </div>
+    <div class="col-sm-3 col-sm-offset-1 sidebar">
+      <div class="sidebar-module">
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>

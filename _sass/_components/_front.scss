@@ -21,6 +21,19 @@
       .box {
         height: 240px;
         margin: -15px;
+        .list-unstyled {
+          float: left;
+          margin-left: 2em;
+          padding-top: .5em;
+          li {
+            margin-bottom: .5em;
+          }
+        }
+        .show-info {
+          float: left;
+          margin-left: 2em;
+          padding-top: .5em;
+        }
       }
       h2 {
         font-size: 3rem !important;
@@ -30,6 +43,19 @@
     .bg-warning {
       display: inline-block;
       padding: 5px;
+    }
+    .box {
+      .list-unstyled {
+        margin-left: 2em;
+        padding-top: .5em;
+        li {
+          margin-bottom: .5em;
+        }
+      }
+      .show-info {
+        margin-left: 2em;
+        padding-top: .5em;
+      }
     }
   }
   #front-about {
