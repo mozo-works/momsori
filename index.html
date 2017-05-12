@@ -11,15 +11,15 @@ layout: default
       <h2>{% if site.data.front.banner.link %}<a href="{{ site.data.front.banner.link }}">{% endif %}<span class="bg-primary">{{ site.data.front.banner.title | newline_to_br }}</span>{% if site.data.front.banner.link %}</a>{% endif %}</h2>
       {% endif %}
       <ul class="list-unstyled">
-        {% if site.data.front.banner.when %}<li><span class="bg-primary lead">{{ site.data.front.banner.when }}</span></li>{% endif %}
-        {% if site.data.front.banner.where %}<li><span class="bg-primary lead">{{ site.data.front.banner.where }}</span></li>{% endif %}
+        {% if site.data.front.banner.when %}<li><span class="bg-info lead" style="color: #fff;">{{ site.data.front.banner.when }}</span></li>{% endif %}
+        {% if site.data.front.banner.where %}<li><span class="bg-info lead">{{ site.data.front.banner.where }}</span></li>{% endif %}
       </ul>
       {% if site.data.front.banner.description %}
       <p>{{ site.data.front.banner.description }}</p>
       {% endif %}
       {% if site.data.front.banner.ticket %}
       <p class="lead show-info">
-        <a class="btn btn-success btn-lg" href="{{ site.data.front.banner.ticket }}" role="button">공연 정보</a>
+        <a class="btn btn-success btn-lg" target="_blank" href="{{ site.data.front.banner.ticket }}" role="button">공연 정보</a>
       </p>
       {% endif %}
     </div>
@@ -30,7 +30,7 @@ layout: default
   <div class="container"><div class="row">
     <div class="col-md-8">
       <p class="lead">
-        {{ site.data.front.introduction | newline_to_br }}
+        {{ site.data.front.introduction | newline_to_br | markdownify }}
         <p><img src="/assets/images/{{ site.logo }}" alt="로고" class="img-responsive" /></p>
       </p>
     </div>
