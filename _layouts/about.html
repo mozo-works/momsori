@@ -19,7 +19,7 @@ layout: default
       <ol class="list-unstyled">
         {% for item in site.data.about-nav %}
         <li>
-          <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
+          <h4><a class="text-primary" href="{{ item.url }}">{{ item.title }}</a></h4>
           <p>{{ item.description | markdownify }}</p>
         </li>
         {% endfor %}
