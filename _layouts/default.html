@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   {% include head.html %}
-  <body{% if page.url %} class="{{ page.url | replace:'/',' ' | lstrip | rstrip }}{% if page.url == '/' %}front{% endif %}"{% endif %}>
+  <body{% if page.url %} class="{{ page.url | replace:'/',' ' | lstrip | rstrip }}{% if page.url == '/' %}front{% endif %}{% if site.data.top-bar.title %} top-bar{% endif %}"{% endif %}>
     {% if site.google_analytics and jekyll.environment == 'production' %}{% include ga.html %}{% endif %}
 
     {% include header.html %}
