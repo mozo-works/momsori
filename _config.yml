@@ -22,7 +22,7 @@ facebook:
   publisher: https://www.facebook.com/momsori
 logo: momsori.gif
 google_site_verification:
-google_analytics:
+google_analytics: UA-81266340-3
 
 # Build
 exclude:
