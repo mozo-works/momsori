@@ -10,6 +10,8 @@ title: 언론보도
 
 [소리로 변화하는 공간, 보이스 씨어터 몸소리 &lt;도시소리동굴&gt;](/press/review-2016/), 조만수(연극평론가) from [서울거리예술비평집 (2017.01), 서울거리예술축제](http://www.sfac.or.kr/html/policy/sfac_policy.asp?flag=READ&serial=232)
 
+[전문 보기](/press/review-2016/){:.btn.btn-warning}
+
 &nbsp;
 
 <div class="embed-responsive embed-responsive-16by9 m-t-2">
