@@ -7,21 +7,28 @@ layout: default
 <div id="front-banner" class="jumbotron">
   <div class="container">
     <div class="box" style="background: url('/assets/images/banners/{{ site.data.front.banner.bg-image }}'); background-size: cover; ">
-      {% if site.data.front.banner.title %}
-      <h2>{% if site.data.front.banner.link %}<a href="{{ site.data.front.banner.link }}">{% endif %}<span class="bg-primary">{{ site.data.front.banner.title | newline_to_br }}</span>{% if site.data.front.banner.link %}</a>{% endif %}</h2>
-      {% endif %}
-      <ul class="list-unstyled">
-        {% if site.data.front.banner.when %}<li><span class="bg-info lead" style="color: #fff;">{{ site.data.front.banner.when }}</span></li>{% endif %}
-        {% if site.data.front.banner.where %}<li><span class="bg-info lead">{{ site.data.front.banner.where }}</span></li>{% endif %}
-      </ul>
-      {% if site.data.front.banner.description %}
-      <p>{{ site.data.front.banner.description }}</p>
-      {% endif %}
-      {% if site.data.front.banner.ticket %}
-      <p class="lead show-info">
-        <a class="btn btn-success btn-lg" target="_blank" href="{{ site.data.front.banner.ticket }}" role="button">공연 정보</a>
-      </p>
-      {% endif %}
+      <div class="col-md-6 col-md-offset-6 text-right" style="padding-right: 6rem;">
+        {% if site.data.front.banner.title %}
+        <h2>{% if site.data.front.banner.link %}<a class="text-info" href="{{ site.data.front.banner.link }}">{% endif %}{{ site.data.front.banner.title | newline_to_br }}{% if site.data.front.banner.link %}</a>{% endif %}</h2>
+        {% endif %}
+        <ul class="list-unstyled">
+          {% if site.data.front.banner.when %}<li><span class="text-info lead">{{ site.data.front.banner.when }}</span></li>{% endif %}
+          {% if site.data.front.banner.where %}<li><span class="text-info lead">{{ site.data.front.banner.where }}</span></li>{% endif %}
+        </ul>
+        {% if site.data.front.banner.description %}
+        <p>{{ site.data.front.banner.description }}</p>
+        {% endif %}
+
+        <p class="lead show-info">
+          {% if site.data.front.banner.link %}
+          <a class="btn btn-info btn-lg" target="_blank" href="{{ site.data.front.banner.link }}" role="button">공연 정보</a>
+          {% endif %}
+          {% if site.data.front.banner.ticket %}
+          <a class="btn btn-success btn-lg" target="_blank" href="{{ site.data.front.banner.ticket }}" role="button">사전 예매</a>
+          {% endif %}
+        </p>
+      </div>
+
     </div>
   </div>
 </div>

@@ -7,16 +7,15 @@ introduction: |
 
 banner:
   title: |
-    도시
-    소리
-    동굴
-  when: 2017년 5월 23일 저녁 8:00 ~ 08:40
-  where: <a target="_blank" href="http://map.naver.com/?mapmode=0&pinId=18795595&pinType=site&lng=09ddb8fda77495745a16026d3339acf0&lat=eaf3a43d25f90cbcf130a321d5edabb8&dlevel=11&enc=b64">강남구 테헤란로 동훈타워 안팎</a>
+    도시소리동굴
+    _문화비축기지편
+  when: 2017년 6월 15일 (금) ~ 17일 (일)) 17:30
+  where: <a href="http://dmaps.kr/9hecs" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 문화비축기지</a>
   description:
   bg-image: banner3.jpg
-  link: /work/city-cave/
+  link: /20180615/
   long-image:
-  ticket: https://www.tumblbug.com/teheranro_concert2017
+  ticket: https://goo.gl/forms/sS3FymhX0NiVstoO2
 
 en:
   introduction: |
