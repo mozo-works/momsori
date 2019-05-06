@@ -7,15 +7,17 @@ introduction: |
 
 banner:
   title: |
-    도시소리동굴
-    _문화비축기지편
-  when: 2018년 6월 15일 (금) ~ 17일 (일) 19:30
-  where: <a href="http://dmaps.kr/9hecs" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 문화비축기지</a>
+    보이스테라피 워크숍
+    &lt;자장가 프로젝트&gt;
+  when: 2019년 6월 4일 ~ 10월 15일
+  where: <a href="http://naver.me/GzX2qczc" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 서울예술치유허브</a>
   description:
-  bg-image: banner3.jpg
-  link: /20180615/
+  bg-image: /assets/images/course/lullaby/banner.jpg
+  link-text: 자세한 내용
+  link: /course/lullaby
   long-image:
-  ticket: https://goo.gl/forms/sS3FymhX0NiVstoO2
+  ticket-text: 신청하기
+  ticket: 
 
 en:
   introduction: |

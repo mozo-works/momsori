@@ -6,7 +6,7 @@ layout: default
 
 <div id="front-banner" class="jumbotron">
   <div class="container">
-    <div class="box" style="background: url('/assets/images/banners/{{ site.data.front.banner.bg-image }}'); background-size: cover; ">
+    <div class="box" style="background: url('{{ site.data.front.banner.bg-image }}'); background-size: cover; ">
       <div class="col-md-6 col-md-offset-6 text-right" style="padding-right: 6rem;">
         {% if site.data.front.banner.title %}
         <h2>{% if site.data.front.banner.link %}<a class="text-info" href="{{ site.data.front.banner.link }}">{% endif %}{{ site.data.front.banner.title | newline_to_br }}{% if site.data.front.banner.link %}</a>{% endif %}</h2>
@@ -21,10 +21,10 @@ layout: default
 
         <p class="lead show-info">
           {% if site.data.front.banner.link %}
-          <a class="btn btn-info btn-lg" target="_blank" href="{{ site.data.front.banner.link }}" role="button">공연 정보</a>
+          <a class="btn btn-info btn-lg" target="_blank" href="{{ site.data.front.banner.link }}" role="button">{% if site.data.front.banner.link-text %}{{ site.data.front.banner.link-text }}{% else %}공연 정보{% endif %}</a>
           {% endif %}
           {% if site.data.front.banner.ticket %}
-          <a class="btn btn-success btn-lg" target="_blank" href="{{ site.data.front.banner.ticket }}" role="button">사전 예매</a>
+          <a class="btn btn-success btn-lg" target="_blank" href="{{ site.data.front.banner.ticket }}" role="button">{% if site.data.front.banner.ticket-text %}{{ site.data.front.banner.ticket-text }}{% else %}사전 예매{% endif %}</a>
           {% endif %}
         </p>
       </div>
