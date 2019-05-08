@@ -5,6 +5,9 @@
     margin-top: 40px;
     margin-bottom: 0;
     background-size: 100%;
+    h2 a {
+      background: rgba(0,0,0, .7);
+    }
     @media(min-width: $screen-sm-max) {
       .box {
         height: 560px;
