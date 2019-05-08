@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<div class="jumbotron page-header"{% if page.slug %} style="background-image:url({{ '/assets/images/course/' | append: page.slug | append: '/banner.jpg' }});"{% endif %}>
+<div class="jumbotron page-header">
   <div class="container">
-    <h1 class="display-3 text-white">{{ page.title | escape }}</h1>
-    <h3 class="display-4">{{ page.subtitle }}</h3>
+    <div class="box"{% if page.slug %} style="background-image:url({{ '/assets/images/course/' | append: page.slug | append: '/banner.jpg' }});"{% endif %}>
+      <h1 class="display-3 text-white"><span>{{ page.title | escape }}</span></h1>
+      <h3 class="display-4"><span>{{ page.subtitle }}</span></h3>
+    </div>
   </div>
 </div>
 

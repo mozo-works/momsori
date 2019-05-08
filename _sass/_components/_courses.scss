@@ -1,6 +1,5 @@
 .courses {
   .jumbotron.page-header {
-    // background-image: url('/assets/images/banners/courses.jpg');
     background: #1c1e22;
   }
   .col-lg-12 h2 {
@@ -9,18 +8,30 @@
 }
 
 .course .jumbotron.page-header {
-  background-size: cover;
-  margin-top: 50px;
+  padding: 0 !important;
+  .container .box {
+    min-height: 560px;
+    margin-top: -22px;
+    margin-bottom: -12px;
+    background-size: cover;
+    padding-top: 30px;
+  }
+  h1.display-3,
+  h3.display-4 {
+    margin: .5rem;
+    span {
+      background-color: rgba(0,0,0,.7);
+    }
+  }
   @media(max-width: $screen-xs-max) {
-    min-height: 240px;
+    .container {
+      min-height: 240px;
+    }
     h1.display-3 {
       font-size: 3rem !important;
     }
     h3.display-4 {
       font-size: 2rem !important;
     }
-  }
-  @media(min-width: $screen-sm-max) {
-    min-height: 560px;
   }
 }
