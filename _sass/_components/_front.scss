@@ -5,6 +5,13 @@
     margin-top: 40px;
     margin-bottom: 0;
     background-size: 100%;
+    #sub-title {
+      margin-top: 2rem;
+    }
+    h2 { margin-top: 0; }
+    #sub-title,
+    .when,
+    .where,
     h2 a {
       background: rgba(0,0,0, .7);
     }
@@ -13,16 +20,19 @@
         height: 560px;
         margin-right: -15px;
         margin-top: -15px;
+        padding-right: 6rem;
+        padding-top: 6rem;
       }
       h2 {
         margin-left: 1em;
-        padding-top: 1em;
         font-size: 48px;
       }
     }
     @media(max-width: $screen-xs-max) {
       .box {
         height: 240px;
+        padding-top: 4rem;
+        padding-right: 0rem;
         margin: -15px;
         .list-unstyled {
           float: left;
@@ -51,11 +61,13 @@
       .list-unstyled {
         margin-left: 2em;
         padding-top: .5em;
+        float: none;
         li {
           margin-bottom: .5em;
         }
       }
       .show-info {
+        float: none;
         margin-left: 2em;
         padding-top: .5em;
       }

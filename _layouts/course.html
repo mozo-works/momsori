@@ -5,6 +5,7 @@ layout: default
 <div class="jumbotron page-header">
   <div class="container">
     <div class="box"{% if page.slug %} style="background-image:url({{ '/assets/images/course/' | append: page.slug | append: '/banner.jpg' }});"{% endif %}>
+      {% if page.sub-title %}<span id="sub-title">{{ page.sub-title | escape }}</span>{% endif %}
       <h1 class="display-3 text-white"><span>{{ page.title | escape }}</span></h1>
       <h3 class="display-4"><span>{{ page.subtitle }}</span></h3>
     </div>

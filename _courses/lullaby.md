@@ -1,8 +1,9 @@
 ---
 layout: course
 order: 5
-title: 보이스테라피 워크숍 <자장가 프로젝트>
-subtitle: 2019 서울예술치유허브 예술로 힐링 선정 프로그램
+sub-title: 보이스테라피 워크숍
+title: <자장가 프로젝트>
+subtitle: 2019년 예술치유프로젝트 [예술로 힐링] 선정프로그램
 slug: lullaby
 meta: |
   - 대상:

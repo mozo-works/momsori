@@ -7,13 +7,14 @@ layout: default
 <div id="front-banner" class="jumbotron">
   <div class="container">
     <div class="box" style="background: url('{{ site.data.front.banner.bg-image }}'); background-size: cover; ">
-      <div class="col-md-6 col-md-offset-6 text-right" style="padding-right: 6rem;">
+      <div class="col-md-6 col-md-offset-6 text-right">
         {% if site.data.front.banner.title %}
-        <h2>{% if site.data.front.banner.link %}<a class="text-info" href="{{ site.data.front.banner.link }}">{% endif %}{{ site.data.front.banner.title | newline_to_br }}{% if site.data.front.banner.link %}</a>{% endif %}</h2>
+        {% if site.data.front.banner.sub-title %}<span id="sub-title">{{ site.data.front.banner.sub-title }}</span>{% endif %}
+        <h2>{% if site.data.front.banner.link %}<a class="text-info" href="{{ site.data.front.banner.link }}">{% endif %}{{ site.data.front.banner.title | escape }}{% if site.data.front.banner.link %}</a>{% endif %}</h2>
         {% endif %}
         <ul class="list-unstyled">
-          {% if site.data.front.banner.when %}<li><span class="text-info lead">{{ site.data.front.banner.when }}</span></li>{% endif %}
-          {% if site.data.front.banner.where %}<li><span class="text-info lead">{{ site.data.front.banner.where }}</span></li>{% endif %}
+          {% if site.data.front.banner.when %}<li><span class="text-info lead when">{{ site.data.front.banner.when }}</span></li>{% endif %}
+          {% if site.data.front.banner.where %}<li><span class="text-info lead where">{{ site.data.front.banner.where }}</span></li>{% endif %}
         </ul>
         {% if site.data.front.banner.description %}
         <p>{{ site.data.front.banner.description }}</p>
