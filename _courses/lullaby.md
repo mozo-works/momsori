@@ -3,7 +3,7 @@ layout: course
 order: 5
 sub-title: 보이스테라피 워크숍
 title: <자장가 프로젝트>
-subtitle: 2019년 예술치유프로젝트 [예술로 힐링] 선정프로그램
+subtitle: 2019년 예술치유 프로젝트 <예술로 힐링> 선정 프로그램
 slug: lullaby
 meta: |
   - 대상:
@@ -41,7 +41,7 @@ markup: |
           <td style="text-align: center">공연</td>
         </tr>
         <tr>
-          <td style="text-align: center">10월 13일 월요일<br>10시 ~ 16시<br>(리허설 포함)</td>
+          <td style="text-align: center">10월 13일 일요일<br>10시 ~ 16시<br>(리허설 포함)</td>
         </tr>
         <tr>
           <td style="text-align: center">참여자 최종 간담회</td>
