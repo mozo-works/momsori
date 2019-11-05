@@ -6,17 +6,17 @@ introduction: |
   보이스씨어터 ‘몸MOM소리’는 소리가 몸과 맘과 자연을 이어주는 통로라는 것을 인식하고, 이를 바탕으로 소리 재료를 본격적으로 실험하여 창작한 작품으로 여러분과 공명하고자 합니다.
 
 banner:
-  sub-title: 보이스테라피 워크숍
-  title: <자장가 프로젝트>
-  when: 2019년 6월 4일 ~ 10월 15일
-  where: <a href="http://naver.me/GzX2qczc" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 서울예술치유허브</a>
+  sub-title: 관객 참여형 보이스테라피 워크숍+보이스 즉흥공연
+  title: <여기, 지금, 당신의 소리로 만드는 보이스테라피 콘서트>
+  when: 019. 11. 15.(금) 19:00 /  11. 16.(토) 14:00
+  where: <a href="http://naver.me/5BSgjcks" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 과천시민회관 갤러리 아라</a>
   description:
-  bg-image: /assets/images/course/lullaby/banner.jpg
-  link-text: 자세한 내용
-  link: /course/lullaby
+  bg-image: /assets/images/banners/201911-voice-therapy-concert.jpg
+  link-text: 자세히보기
+  link: /work/here-now/
   long-image:
-  ticket-text: 신청하기
-  ticket:
+  ticket-text: 사전예약
+  ticket: https://forms.gle/NcmmpgZX5Nops3bMA
 
 en:
   introduction: |
