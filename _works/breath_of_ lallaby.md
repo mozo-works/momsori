@@ -1,12 +1,12 @@
 ---
 layout: work
-order: 7
-title: 도시소리동굴
+order: 8
+title: 숨, 자장가
 subtitle: |
   잃어버린 에너지를
   회복시켜 줄
   도시소리동굴로의 초대.
-slug: city-cave
+slug: breath_of_lullaby
 video:
   - oVV33d55Kb8
   - sS4gJCNTZNk
