@@ -2,12 +2,12 @@
 layout: work
 order: 8
 title: 숨, 자장가
-subtitle: ''숨'이 '쉼'이 되는 시간, 숨, 자장가
+subtitle: "'숨'이 '쉼'이 되는 시간, 숨, 자장가"
 slug: breath_of_lullaby
 video:
   - MKMqDZWI7WY
   - yHPw1SQEW-U
-meta: 
+meta: |
   - 형식: 보이스 퍼포먼스
   - 창작년도: 2019
   - 창작, 연출: 김진영
