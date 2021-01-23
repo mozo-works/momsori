@@ -21,7 +21,8 @@ meta: |
 ---
 
 ## “Sounds from bodies vibrate the soul of the city”
-
+* 2018 Uijeonbu Music Theater Festival
+* 2017 Seoul Street Art Market (official Invitation)
 * 2016 Ansan Street Art Festival (official Invitation)
 * 2016 Seoul Street Art Festival (official invitation)
 * 2015 Created with support by Seoul Street Arts Center(SSAC)/ Performed in SSAC.
