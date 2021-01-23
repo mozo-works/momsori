@@ -2,10 +2,7 @@
 layout: work
 order: 8
 title: 숨, 자장가
-subtitle: |
-  잃어버린 에너지를
-  회복시켜 줄
-  도시소리동굴로의 초대.
+subtitle: 삶에 지친 그대, 그대 안의 어린아이를 토닥여주는 자장가의 시간
 slug: breath_of_lullaby
 video:
   - oVV33d55Kb8
