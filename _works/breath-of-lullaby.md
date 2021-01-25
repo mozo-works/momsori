@@ -2,7 +2,7 @@
 layout: work
 order: 8
 title: 숨, 자장가
-subtitle: "'숨'이 '쉼'이 되는 시간, 숨, 자장가"
+subtitle: "삶에 지친 그대, 그대 안의 어린아이를 토닥여주는 자장가의 시간"
 slug: breath_of_lullaby
 video:
   - MKMqDZWI7WY
